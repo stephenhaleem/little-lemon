@@ -1,0 +1,256 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background: #fff;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.site-header {
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #495e57;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #d4a900;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #495e57;
+}
+
+.hero {
+  background: #495e57;
+  color: white;
+  padding: 75px 20px;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #f4ce14;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 28px;
+  margin: 5px 0 20px;
+}
+
+.hero p {
+  max-width: 480px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.hero-button,
+.submit-button,
+.confirmation button {
+  display: inline-block;
+  background: #f4ce14;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero-button:hover,
+.submit-button:hover,
+.confirmation button:hover {
+  background: #e5be00;
+}
+
+.booking-section {
+  padding: 65px 20px;
+  background: #f8f9fa;
+}
+
+.booking-container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  font-size: 30px;
+  color: #495e57;
+  margin-bottom: 10px;
+}
+
+.section-heading p {
+  color: #666;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  color: #333;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid #495e57;
+  outline-offset: 1px;
+}
+
+.form-group [aria-invalid="true"] {
+  border-color: #b42318;
+}
+
+.error {
+  color: #b42318;
+  font-size: 13px;
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.confirmation {
+  text-align: center;
+}
+
+.confirmation h2 {
+  color: #495e57;
+}
+
+.success-icon {
+  background: #e6f4ea;
+  color: #247a38;
+  font-size: 35px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 20px;
+}
+
+.booking-summary {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 25px 0;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 25px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  nav {
+    gap: 18px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .booking-container {
+    padding: 24px 18px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
