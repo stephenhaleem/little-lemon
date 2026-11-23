@@ -33,7 +33,7 @@ This project was developed as part of the Meta Front-End Developer Capstone on C
 
 1. Clone the repository:
 
-   git clone YOUR_REPOSITORY_URL
+   git clone https://github.com/stephenhaleem/little-lemon
 
 2. Navigate to the project folder:
 
